@@ -12,6 +12,10 @@ const io = require('socket.io')(server, {
 io.on('connection', (socket) => {
     console.log('connection', socket);
 
+    socket.on('sendChatToServer', (message) => {
+        console.log(message);
+    });
+
     socket.on('disconnect', (socket) => {
         console.log('Disconnect')
     });
