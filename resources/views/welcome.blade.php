@@ -18,19 +18,42 @@
             .chat-row{
                 margin: 50px;
             }
+            ul{
+                margin:0;
+                padding:0;
+                list-style: none;
+            }
+
+            ul li {
+                padding: 8px;
+                background: #79b4e4;
+                margin-bottom: 20px;
+            }
+
+            ul li:nth-child(2n-2){
+                background: #e78a4b;
+            }
+
+            .chat-input{
+                border: 1px solid lightblue;
+                border-radius: 10px;
+                padding: 8px 10px;
+            }
         </style>
     </head>
     <body >
        
         <div class="container">
             <div class="row chat-row">
-                <div class="chat-content">
+                <div class="chat-content col">
                     <ul>
                         <li>adddjajsa</li>
                     </ul>
                 </div>
+            </div>
 
-                <div class="chat-section">
+            <div class="row chat-row">
+                <div class="chat-section col">
                     <div class="chat-box">
                         <div id="chatInput" class="chat-input bg-white" contenteditable="">
 
